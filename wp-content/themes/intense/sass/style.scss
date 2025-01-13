@@ -1,0 +1,41 @@
+$theme-colors: (
+  "primary": #0444C1,
+  "dark": #000000,
+  "light": #f6f8f9
+);
+
+//colors
+$primary: #232A40;
+$secondary:#fdf0f6;
+$primary-dark: #F5F5F5;
+
+
+//fonts
+$primary-font:'Satoshi-Variable';
+$secondary-font:'CabinetGrotesk-Variable';
+$tertiary-font: 'Inter', serif;
+
+$body-shade-bg: #F4F5FA;
+$black: #000;
+$white: #fff;
+$grey: #E8EDEA;
+$dark-grey:#4D4D4D;
+$body-color: #154B2C;
+
+$darkgreen: #09441F;
+$lightgreen: #154B2C;
+$lightergreen: #EEFAF1;
+$volt:#C2EF52;
+$blue:#111827;
+
+
+@import "base/custom_base";
+@import "base/base";
+@import "base/header";
+@import "base/footer";
+@import "base/components";
+@import "pages/index";
+
+
+
+

@@ -1,0 +1,160 @@
+// 1: Global CSS Start
+html {
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  overflow-x: hidden;
+  @media (min-width: 300px) and (max-width: 1399.98px) {
+    font-size: smaller;
+  }
+}
+
+body {
+  font-family: 'Satoshi-Variable';
+  color: $primary;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+ul,
+ol {
+  padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+@media (min-width: 1400px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+      max-width: 1230px;
+  }
+}
+
+
+
+// .container {
+//   @media (min-width: 1300px) and (max-width: 1439.98px) {
+//     max-width: 1230px;
+//   }
+
+//   @media (min-width: 1920px) {
+//     max-width: 1230px;
+//   }
+// }
+
+// 1: Global CSS End
+
+//2: Headings Start
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include transition();
+}
+
+
+.read-more{
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+
+#return-to-top {
+  position: fixed;
+  z-index: 99;
+  bottom: 20px;
+  right: 2%;
+  background: $primary;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  line-height: 50px;
+  text-align: center;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top svg {
+  margin: 0;
+  stroke: #fff;
+  position: relative;
+  left: 0;
+  top: 0;
+  font-size: 1.875rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  &:hover {
+    margin-top: -6px;
+  }
+}
+
+
+
+/* the slides */
+.slick-slide {
+  margin: 0 20px;
+}
+.slick-list {
+  margin: 0 -27px;
+}
+/* General Style for Slick Dots */
+.slick-dots {
+  position: absolute;
+  bottom: -50px; /* Adjust the position from the bottom */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+.slick-dots li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px; /* Space between dots */
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 12.3px;
+  height: 12.3px;
+  padding: 5px;
+  border: none;
+  border-radius: 50%; /* Makes the dots circular */
+  background: #ddd; /* Default color of the dots */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.slick-dots li.slick-active button {
+  width: 18px;
+  height: 18px;
+  background: #B6EC2E; /* Active dot color */
+}
+.slick-dots li button:before{
+  display: none;
+}

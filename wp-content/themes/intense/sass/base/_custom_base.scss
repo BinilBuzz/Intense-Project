@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('../fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('../fonts/Satoshi-Variable.woff') format('woff'),
+       url('../fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Variable';
+  src: url('../fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
+       url('../fonts/CabinetGrotesk-Variable.woff') format('woff'),
+       url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+       font-weight: 100 900;
+       font-display: swap;
+       font-style: normal;
+}
+
+h1{
+  font-family: 'CabinetGrotesk-Variable';
+}
+h4{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+.list-unstyled {
+  margin-left: 0;
+}
+
+.page {
+  margin: 0 !important;
+}
+
+.entry-footer {
+  display: none;
+}
+
+.w-md-50 {
+  @media (min-width: 767.98px) {
+    width: 100%;
+  }
+}
+.btn-green{
+  background-color: #B6EC2E;
+  padding: 12px 28px;
+  border-radius: 6px;
+  border: 1px solid #AFDF37;
+  color: #154B2C;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-top: 1.625rem;
+  &:hover {
+    background-color: #417C5B;
+    border: 1px solid #AFDF37;
+    color: #154B2C;
+    @include transition();
+  }
+  svg {
+    margin-left: 6px;
+  }
+}
+

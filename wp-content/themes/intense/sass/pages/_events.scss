@@ -1,0 +1,92 @@
+.events {
+  background-color: #f6f6f7;
+  padding: 7rem 0;
+  @media (max-width: 767.98px) {
+    padding: 5rem 0;
+  }
+  @media (max-width: 575.98px) {
+    padding: 4rem 0;
+  }
+  h3 {
+    padding-top: 0.5rem;
+  }
+  p {
+    font-weight: 500;
+    padding: 0.5rem 0 1.625rem;
+  }
+  .img-wrapper {
+    @media (max-width: 991.98px) {
+      padding-top: 3rem;
+    }
+    img {
+      width: 100%;
+      height: 355px;
+      object-fit: cover;
+    }
+  }
+}
+
+// Offering
+.offering {
+  padding: 6rem 0;
+  @media (max-width: 767.98px) {
+    padding: 4rem 0;
+  }
+  @media (max-width: 575.98px) {
+    padding: 3rem 0;
+  }
+  .offering-block {
+    border: 1px solid #eeefef;
+    border-radius: 4px;
+    padding: 1.5625rem 1.6875rem;
+    margin-bottom: 1.25rem;
+    &:hover{
+      box-shadow: 0 .5rem 1rem rgba($black, .15);
+    }
+    h4 {
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: #212629;
+      padding: 1.5625rem 0 0.1875rem;
+      line-height: 1.35rem;
+    }
+    p {
+      font-size: 0.875rem;
+      color: #595f63;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// FAQs
+.faq {
+  padding: 6rem 0;
+  @media (max-width: 767.98px) {
+    padding: 4rem 0;
+  }
+  @media (max-width: 575.98px) {
+    padding: 3rem 0;
+  }
+  #faq-accordion {
+    .accordion-button{
+      padding: 1.25rem 0;
+    }
+    .accordion-item button.accordion-button.collapsed {
+      color: #212629;
+      font-weight: 700;
+    }
+    .accordion-button:not(.collapsed) {
+      font-weight: 700;
+      color: #0444c1;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .accordion-body{
+      color: #595F63;
+      font-weight: 400;
+      padding: 0 0rem 1rem;
+
+    }
+  }
+}
